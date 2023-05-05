@@ -16,6 +16,7 @@ class BadgedIcon extends StatelessWidget {
         Align(alignment: Alignment.bottomCenter, child: icon),
         Positioned(
           right: 0,
+          bottom: 12,
           child: Container(
             height: 16,
             width: 20,
