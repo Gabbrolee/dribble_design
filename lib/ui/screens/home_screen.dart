@@ -10,6 +10,7 @@ import '../widgets/fixed_header.dart';
 import '../widgets/indicator_dot.dart';
 import '../widgets/product_tile.dart';
 import '../widgets/search_bar.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class HomePage extends HookWidget {
   final appBarMaxHeight = 200 + 125;
@@ -47,11 +48,12 @@ class HomePage extends HookWidget {
                 Center(
                   child: BadgedIcon(
                     badgeText: "9+",
-                    icon: Icon(
-                      Icons.chat_outlined,
-                      size: 30,
-                      color: Colors.grey[700],
-                    ),
+                    // icon: Icon(
+                    //   Icons.chat_outlined,
+                    //   size: 30,
+                    //   color: Colors.grey[700],
+                    // ),
+                    icon: SvgPicture.asset('images/svgs/comment-alt.svg')
                   ),
                 ),
                 const SizedBox(width: 20),
