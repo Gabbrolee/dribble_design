@@ -20,7 +20,7 @@ class FixedHeader extends SliverPersistentHeaderDelegate {
                   Expanded(
                     child: Text(
                       "Best Sale Product",
-                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+                      style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
                     ),
                   ),
                   TextButton(
