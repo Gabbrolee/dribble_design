@@ -203,16 +203,79 @@ class ProductDetailScreen extends StatelessWidget {
                   children: [
                     Row(
                       children: [
-                        Text("Brand: CharmkpR"),
+                        // Text("Brand: CharmkpR"),
+                        RichText(
+                          text: TextSpan(
+                              text: "Brand:  ",
+                              style: TextStyle(
+                                color: Colors.grey.shade600,
+                                fontSize: 16
+                              ),
+                            children: [
+                              TextSpan(text: "ChArmkpR" ,style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 18,
+                                fontWeight: FontWeight.w500
+                              ),),
+                            ]
+                          ),
+                        ),
                         Spacer(),
-                        Text("Color: Brown"),
+                        //Text("Color: Aprikot"),
+                        RichText(
+                          text: TextSpan(
+                              text: "Color:  ",
+                              style: TextStyle(
+                                  color: Colors.grey.shade600,
+                                  fontSize: 16
+                              ),
+                              children: [
+                                TextSpan(text: "Aprikot" ,style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w500
+                                ),),
+                              ]
+                          ),
+                        ),
                       ],
                     ),
                     Row(
                       children: [
-                        Text("Brand: CharmkpR"),
+                        RichText(
+                          text: TextSpan(
+                              text: "Brand:  ",
+                              style: TextStyle(
+                                  color: Colors.grey.shade600,
+                                  fontSize: 16
+                              ),
+                              children: [
+                                TextSpan(text: "ChArmkpR" ,style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w500
+                                ),),
+                              ]
+                          ),
+                        ),
                         Spacer(),
-                        Text("Color: Brown"),
+                        //Text("Color: Aprikot"),
+                        RichText(
+                          text: TextSpan(
+                              text: "Color:  ",
+                              style: TextStyle(
+                                  color: Colors.grey.shade600,
+                                  fontSize: 16
+                              ),
+                              children: [
+                                TextSpan(text: "Aprikot" ,style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w500
+                                ),),
+                              ]
+                          ),
+                        ),
                       ],
                     ),
                   ],
@@ -226,8 +289,8 @@ class ProductDetailScreen extends StatelessWidget {
   }
 
   TextStyle get captionStyle => TextStyle(
-    color: Colors.grey,
-    fontSize: 16,
-    fontWeight: FontWeight.w500,
-  );
+        color: Colors.grey,
+        fontSize: 16,
+        fontWeight: FontWeight.w500,
+      );
 }
