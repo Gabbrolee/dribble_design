@@ -172,19 +172,19 @@ class HomePage extends HookWidget {
         selectedIconTheme: const IconThemeData(color: Color(0xFF4DAB95)),
         items: [
           BottomNavigationBarItem(
-            icon: Image.asset("images/home.png"),
+            icon: Image.asset("images/home.png", color: Colors.grey.shade200, colorBlendMode: BlendMode.darken,),
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Image.asset("images/voucher.png"),
+            icon: Image.asset("images/voucher.png", color: Colors.grey.shade200, colorBlendMode: BlendMode.darken, ),
             label: 'Voucher',
           ),
           BottomNavigationBarItem(
-            icon: Image.asset("images/wallet.png"),
+            icon: Image.asset("images/wallet.png", color: Colors.grey.shade200, colorBlendMode: BlendMode.darken,),
             label: 'Wallet',
           ),
           BottomNavigationBarItem(
-            icon: Image.asset("images/settings.png"),
+            icon: Image.asset("images/settings.png", color: Colors.grey.shade200, colorBlendMode: BlendMode.darken,),
             label: 'Settings',
           ),
         ],

@@ -27,7 +27,7 @@ class FixedHeader extends SliverPersistentHeaderDelegate {
                     onPressed: () {},
                     child: Text(
                       "See more",
-                      style: TextStyle(color: Colors.green),
+                      style: TextStyle(color: Color(0xFF8CC1B4), fontSize: 16, fontWeight: FontWeight.w700),
                     ),
                   ),
                 ],
