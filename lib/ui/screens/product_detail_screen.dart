@@ -21,7 +21,7 @@ class ProductDetailScreen extends StatelessWidget {
             child: BadgedIcon(
               badgeText: "9+",
               icon: Icon(
-                Icons.chat_outlined,
+                Icons.local_mall_outlined,
                 size: 30,
                 color: Colors.grey[700],
               ),
