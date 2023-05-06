@@ -2,6 +2,8 @@ import 'package:dribble_design/ui/transitions/slide_opacity_transition.dart';
 import 'package:dribble_design/ui/widgets/badged_icon.dart';
 import 'package:flutter/material.dart';
 
+import '../widgets/tab_bar_content.dart';
+
 class ProductDetailScreen extends StatelessWidget {
   const ProductDetailScreen({Key? key}) : super(key: key);
 
@@ -201,82 +203,17 @@ class ProductDetailScreen extends StatelessWidget {
                 height: 60,
                 child: TabBarView(
                   children: [
-                    Row(
-                      children: [
-                        // Text("Brand: CharmkpR"),
-                        RichText(
-                          text: TextSpan(
-                              text: "Brand:  ",
-                              style: TextStyle(
-                                color: Colors.grey.shade600,
-                                fontSize: 16
-                              ),
-                            children: [
-                              TextSpan(text: "ChArmkpR" ,style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 18,
-                                fontWeight: FontWeight.w500
-                              ),),
-                            ]
-                          ),
-                        ),
-                        Spacer(),
-                        //Text("Color: Aprikot"),
-                        RichText(
-                          text: TextSpan(
-                              text: "Color:  ",
-                              style: TextStyle(
-                                  color: Colors.grey.shade600,
-                                  fontSize: 16
-                              ),
-                              children: [
-                                TextSpan(text: "Aprikot" ,style: TextStyle(
-                                    color: Colors.black,
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.w500
-                                ),),
-                              ]
-                          ),
-                        ),
-                      ],
+                    TabBarViewContent(
+                      parentText1: "Brand:  ",
+                      childText1: "ChArmkpR",
+                      parentText2: "Color:  ",
+                      childText2: "Aprikot",
                     ),
-                    Row(
-                      children: [
-                        RichText(
-                          text: TextSpan(
-                              text: "Brand:  ",
-                              style: TextStyle(
-                                  color: Colors.grey.shade600,
-                                  fontSize: 16
-                              ),
-                              children: [
-                                TextSpan(text: "ChArmkpR" ,style: TextStyle(
-                                    color: Colors.black,
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.w500
-                                ),),
-                              ]
-                          ),
-                        ),
-                        Spacer(),
-                        //Text("Color: Aprikot"),
-                        RichText(
-                          text: TextSpan(
-                              text: "Color:  ",
-                              style: TextStyle(
-                                  color: Colors.grey.shade600,
-                                  fontSize: 16
-                              ),
-                              children: [
-                                TextSpan(text: "Aprikot" ,style: TextStyle(
-                                    color: Colors.black,
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.w500
-                                ),),
-                              ]
-                          ),
-                        ),
-                      ],
+                    TabBarViewContent(
+                      parentText1: "Brand:  ",
+                      childText1: "ChArmkpR",
+                      parentText2: "Color:  ",
+                      childText2: "Aprikot",
                     ),
                   ],
                 ),
